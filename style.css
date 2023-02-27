@@ -68,12 +68,13 @@ body * {
   transform: translateY(-50%);
   animation: slide-out 0.2s;
 }
-#switch button :hover {
-  outline: 8px solid var(--bg-color-hover);
+#switch button:hover {
+ outline: 8px solid var(--stroke-color);
 }
 .light #switch button {
   animation: slide-in 0.2s forwards;
 }
+
 #switch span {
   display: block;
   width: 64px;
