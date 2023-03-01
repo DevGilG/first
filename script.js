@@ -1,12 +1,14 @@
 function toggleMode() {
   const html = document.documentElement
 
-  if (html.classList.contains("light")) {
-    html.classList.remove("light")
+  if (html.classList.contains('light')) {
+    html.classList.replace('light', 'dark');
+  } else if (html.classList.contains('dark')) {
+    html.classList.replace('dark', 'light');
   } else {
-    html.classList.add("light")
+    html.classList.add('light');
   }
-
+}
   const img = document.querySelector("#profile img")
 
   if (html.classList.contains("light")) {
@@ -22,7 +24,7 @@ function toggleMode() {
       "Foto de Gilson Guedin sorrindo, de barba, camisa social, blazer e fundo criativo roxo escuro gradiente com laranja"
     )
   }
-}
+
 
 // pode ser substituido por       //
 // html.classlist.toggle('light') //

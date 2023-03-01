@@ -66,13 +66,15 @@ body * {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  animation: slide-out 0.2s;
 }
 #switch button:hover {
   outline: 8px solid var(--stroke-color);
 }
 .light #switch button {
   animation: slide-in 0.2s forwards;
+}
+.dark #switch button {
+  animation: slide-out 0.2s;
 }
 #switch span {
   display: block;
